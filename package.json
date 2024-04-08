@@ -15,6 +15,7 @@
   },
   "scripts": {
     "build": "bun run clean && bun run build.mjs",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "push": "npm version patch && npm publish --access public"
   }
 }
