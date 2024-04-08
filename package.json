@@ -1,0 +1,20 @@
+{
+  "name": "bun-template",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@anymud/bun-plugin-dts": "^1.0.2",
+    "@types/bun": "^1.0.12",
+    "typescript": "^5.4.3"
+  },
+  "scripts": {
+    "build": "bun run clean && bun run build.mjs",
+    "clean": "rm -rf dist"
+  }
+}
