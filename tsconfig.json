@@ -4,17 +4,18 @@
       "ESNext"
     ],
     "target": "ESNext",
-    "module": "ESNext",
-    "moduleDetection": "force",
+    "module": "NodeNext",
+    "moduleDetection": "auto",
     "jsx": "react-jsx",
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
     "downlevelIteration": true,
     "allowJs": true,
-    "moduleResolution": "bundler",
-    "verbatimModuleSyntax": true,
-    "esModuleInterop": false,
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false,
     "allowSyntheticDefaultImports": false,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -25,5 +26,5 @@
   "include": [
     "src/**/*.ts",
     "tests/**/*.ts"
-  ],
+  ]
 }

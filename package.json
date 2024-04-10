@@ -1,7 +1,7 @@
 {
   "name": "bun-template",
   "version": "0.0.1",
-  "type": "module",
+  "type": "commonjs",
   "main": "dist/index.js",
   "module": "src/index.ts",
   "types": "dist/index.d.ts",
@@ -14,7 +14,7 @@
     "typescript": "^5.4.3"
   },
   "scripts": {
-    "build": "bun run clean && tsc -p tsconfig.json",
+    "build": "bun run clean && tsc -p tsconfig.build.json",
     "bump": "bun update && bun run build && bun run push",
     "clean": "rm -rf dist",
     "purge": "bun run clean && rm -rf node_modules && rm -f bun.lockb",
