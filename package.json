@@ -14,9 +14,10 @@
     "typescript": "^5.4.3"
   },
   "scripts": {
-    "build": "bun run clean && tsc -p tsconfig.build.json",
+    "build": "bun run clean && tsc -p tsconfig.json",
     "bump": "bun update && bun run build && bun run push",
     "clean": "rm -rf dist",
+    "purge": "bun run clean && rm -rf node_modules && rm -f bun.lockb",
     "push": "npm version patch && npm publish --access public"
   }
 }
